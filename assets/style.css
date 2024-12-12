@@ -11,6 +11,82 @@ a {
 }
 
 /*debut partie de jules */
+/* Sidenav menu */
+#ve {
+    background-color: #709791;
+    height: 77px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#toggler {
+    margin: 25px;
+}
+
+#c {
+    margin: 15px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -250px;
+    /* Le menu est caché à droite */
+    background-color: #709791;
+    padding-top: 60px;
+    transition: right 0.5s ease;
+    /* Transition de droite */
+}
+
+/* Sidenav menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #111;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+    right: 0;
+    /* Le menu s'ouvre vers la droite */
+}
+
+/* Close btn */
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    /* Toujours à droite */
+    font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
 
 /* fin partie de jules */
 /*debut partie de baptiste */
@@ -20,9 +96,58 @@ a {
 /* debut de partie de maud */
 
 /* fin de partie de maud */
-@media screen and (min-width: 1024px){
-    
+@media screen and (min-width: 1024px) {
+
     /*debut partie de jules */
+    #ve {
+        background-color: #709791;
+        height: 111px;
+        width: 100vw;
+        justify-content: space-around;
+
+    }
+
+    #toggler {
+        display: none;
+    }
+
+    .sidenav {
+        display: contents;
+    }
+
+    #closeBtn {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+
+    }
+
+    #e {
+        display: grid;
+        grid-template-columns: 50vw, 50vw, ;
+        grid-template-rows: 919px;
+        gap: 0px;
+
+    }
+
+    #le {
+        display: flex;
+        grid-column: 1/3;
+        grid-row: 1/2;
+
+    }
+
+    #la {
+        height: 131%;
+        width: 131%;
+    }
+
+    #c {
+        height: 70px;
+        width: 214px;
+    }
 
     /* fin partie de jules */
     /*debut partie de baptiste */
