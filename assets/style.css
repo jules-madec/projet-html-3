@@ -11,33 +11,386 @@ a {
 }
 
 /*debut partie de jules */
-
 /* fin partie de jules */
 /*debut partie de baptiste */
 /*fin partie de baptiste */
 /* debut partie de candice */
+/*Importation des polices*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+p{
+    font-family: "Open Sans", serif;
+}
+a{
+    font-family: "Open Sans", serif;
+}
+/* pour enlever le soulignement des liens */
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2F2F2F;
+}
+/*debut partie de jules */
+/*Définition de la couleur d'arrière plan de la page.*/
+body {
+    background-color: #F7F4E9;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    /* width: 350px; */
+}
+/*On cache les photos du carroussel.*/
+.slider {
+    display: none;
+}
+ /*Définition de la taille , et ajout d'un border radius sur les images de la section destinations.*/
+#destinations img {
+    width: 300px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+/*Placement des destinations les unes en dessous des autres, centrées dans l'axe vertical et horizontal. Puis ajout d'une marge externe en haut et en bas de la section destinations.*/ 
+#destinations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+/*Placement des noms de destinations et des descriptions.*/
+#destinations .text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Ajout d'une marge interne sur la description*/
+#destinations .text1 p:nth-child(2) {
+    padding-left: 10px;
+}
+/*Ajout d'une marge interne et externe sur le deuxième paragraphe du deuxième bloc de texte.*/
+#destinations .text2 p:nth-child(2) {
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+/*Placement des deuxièmes blocs de texte de la section destinations.*/
+#destinations .text2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+/*Ajout d'une marge externe en haut et à gauche du dernier paragraphe du deuxième bloc de texte.*/
+.text2 p:last-child {
+    margin-top: -15px;
+    margin-left: 10px;
+}
+/*Définition de la couleur de fond, de la largeur, de la marge externe en bas et ajout d'un border radius et d'un effet d'ombre sur les cards de la section destinations.*/
+#destinations .card {
+    background-color: #709791;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 4px gray;
+    margin-bottom: 50px;
+}
+/*Défintion du style du titre de premier niveau.*/
+h1 {
+    background-color: #e7c79b;
+    color: #0c5655;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    width: 280px;
+    box-shadow: 2px 4px 4px gray;
+    font-family: "Poppins", sans-serif;
+}
+ 
+/*Définition du style de deuxième niveau.*/
+h2 {
+    background-color: #e7c79b;
+    color: #0c5655;
+    font-size: 20px;
+    margin-bottom: 50px;
+    padding: 5px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    box-shadow: 2px 4px 4px gray;
+    font-family: "Poppins", sans-serif;
+}
+ 
+/*Définition du style du premier bloc de la section témoignages.*/
+#notice div {
+    background-color: #e7c79b;
+    border-radius: 20px;
+    padding: 8px;
+    margin-bottom: 40px;
+    width: 90%;
+}
+ 
+/*Ajout d'une ombre en dessous du deuxième bloc de la section témoignages.*/
+#notice div:nth-child(2) {
+    box-shadow: 2px 4px 4px gray;
+}
+ 
+/*Ajout d'une ombre en dessous du troisième bloc de la section témoignages.*/
+#notice div:nth-child(3) {
+    box-shadow: 2px 4px 4px gray;
+}
+ 
+/*Ajout d'une ombre en dessous du dernier bloc de la section témoignages.*/
+#notice div:last-child {
+    box-shadow: 2px 4px 4px gray;
+}
+ 
+/*Placement de la section notice au centre de la page en colomne.*/
+#notice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+/*Placement de la photo de profil et du nom,prénom du bloc catherine à coté.*/
+#catherine {
+    display: flex;
+}
+ 
+/*Ajout d'une marge externe à droite des photos de profil de la section témoignages.*/
+#notice img {
+    margin-right: 8px;
+}
+ 
+/*Placement de la photo de profil et du nom,prénom du bloc jeanne à coté.*/
+#jeanne {
+    display: flex;
+}
+ 
+/*Placement de la photo de profil et du nom,prénom du bloc thibault à coté.*/
+#thibault {
+    display: flex;
+}
+ 
+/*Placement du dernier paragraphe des blocs de la section témoignages en bas à droite avec une marge interne de 5px.*/
+#notice div:nth-child(2) p:nth-child(5) {
+    display: flex;
+    justify-content: end;
+    padding-right: 5px;
+}
+ 
+#notice div:nth-child(3) p:nth-child(5) {
+    display: flex;
+    justify-content: end;
+    padding-right: 5px;
+}
+ 
+#notice div:last-child p:nth-child(5) {
+    display: flex;
+    justify-content: end;
+    padding-right: 5px;
+}
+ 
+/*Placement de la section galerie photo au centre de la page en colomne.*/
+#photoGallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+/*Ajout d'une marge externe en bas du titre de niveau deux de la section galerie photo.*/
+#photoGallery h2 {
+    margin-bottom: 100px;
+}
+ 
+/*Définition de la grille pour la galerie photo. La grille comporte 1 colomne,6 lignes et des goutières de 15px.*/
+#photoGallery div {
+    display: grid;
+    gap: 15px;
+    margin-top: 50px;
+    justify-content: center;
+    grid-template-columns: 1 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "imgOne"
+        "imgTwo"
+        "imgThree"
+        "imgFour"
+        "imgFive"
+        "imgSix";
+}
+ 
+/*Précision des zones attribuées à chaque image.*/
+#photoGallery div:nth-child(1) {
+    grid-area: imgOne;
+}
+ 
+#photoGallery div:nth-child(2) {
+    grid-area: imgTwo;
+}
+ 
+#photoGallery div:nth-child(3) {
+    grid-area: imgThree;
+}
+ 
+#photoGallery div img:nth-child(4) {
+    grid-area: imgFour;
+}
+ 
+#photoGallery div img:nth-child(5) {
+    grid-area: imgFive;
+}
+ 
+#photoGallery div img:nth-child(6) {
+    grid-area: imgSix;
+}
 /*fin partie de candice */
 /* debut de partie de maud */
-
 /* fin de partie de maud */
+/*Ajout du media query pour la version desktop.*/
+
 @media screen and (min-width: 1024px){
     
     /*debut partie de jules */
-
     /* fin partie de jules */
     /*debut partie de baptiste */
     /*fin partie de baptiste */
     /* debut partie de candice */
-    /*fin partie de candice */
-    /* debut de partie de maud */
 
-    /* fin de partie de maud */
+/*Ajout d'un évenement au survol des cards pour qu'elles s'aggrandissent lorsqu'on les survole.*/
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/*Placement des cards de la section destinations les unes à côté des autres et ajout d'une marge externe en bas.*/
+#destinations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+/*Code pour le carroussel: On deplace les images avec la propriété transform et la valeur translateX, et on défini un certain temps entre ces translations, défini par des pourcentages avant le bloc de transformation.*/
+@keyframes slider-1 {
 
+    0%,
+    3% {
+        transform: translateX(0);
+    }
 
+    8%,
+    18% {
+        transform: translateX(-75%);
+    }
 
+    23%,
+    33% {
+        transform: translateX(-150%);
+    }
 
+    38%,
+    48% {
+        transform: translateX(-225%);
+    }
 
+    53%,
+    100% {
+        transform: translateX(-300%);
+    }
+}
+/*On cache les images qui dépasse des cards et qui vont défilé ensuite avec l'animation précédente.*/
+.card {
+    overflow: hidden;
+}
+/*On met l'animation en pause par défault.*/
+.slider {
+    animation-play-state: paused;
+}
+/*On affiche l'animation au survol des cards.*/
+.image:hover .slider {
+    animation: slider-1 12s infinite ease-in-out;
+}
+/*On défini la taille des images du carroussel et on les place horizontalement.*/ 
+.image {
+    display: flex;
+    flex-direction: row;
+    width: 275px;
+    height: 210px;
+}
+/*Définition de la taille du slider, et ajout d'un flex-shrink pour éviter  l'élément de rétrécir lorsque l'espace est limité dans le conteneur flexible.*/
+.slider {
+    flex-shrink: 0;
+    height: 210px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+}
+/*Définition de la hauteur des images du carroussel.*/
+.slider img {
+    height: 300px;
+}
 
+/*fin partie Jules*/
+/*debut partie baptiste*/
+/*Définition de la grille pour la galerie photo. La grille comporte 3 colomnes,2 lignes et des goutières de 20px.*/
+#photoGallery div {
+    object-fit: cover;
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(3, 319px);
+    grid-template-rows: repeat(2, 249px);
+}
 
+/*Placement de la section galerie photo au centre de la page.*/
+#photoGallery {
+    display: flex;
+    justify-content: center;
+}
+
+#photoGallery div img:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#photoGallery div img:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+#photoGallery div img:nth-child(3) {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    width: 664px;
+    height: 517px;
+}
+
+#photoGallery div img:nth-child(4) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#photoGallery div img:nth-child(5) {
+    grid-column: 2/4;
+    grid-row: 3/5;
+    width: 664px;
+    height: 517px;
+}
+
+#photoGallery div img:nth-child(6) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
 
 }
+    /*fin partie de candice */
+    /* debut de partie de maud */
+    /* fin de partie de maud */
