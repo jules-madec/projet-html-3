@@ -84,10 +84,17 @@ body {
     align-items: center;
     padding: 10px;
 }
+.text1 p:first-child{
+    margin-bottom: 10px;
+}
+div:first-child .text1 p:last-child{
+    margin-bottom: 15px;
+}
 /*Ajout d'une marge externe en haut et à gauche du dernier paragraphe du deuxième bloc de texte.*/
 .text2 p:last-child {
     margin-top: -15px;
     margin-left: 10px;
+    margin-top: 3px;
 }
 /*Définition de la couleur de fond, de la largeur, de la marge externe en bas et ajout d'un border radius et d'un effet d'ombre sur les cards de la section destinations.*/
 #destinations .card {
@@ -164,20 +171,48 @@ h2 {
 #catherine {
     display: flex;
 }
+/*Ajout d'une marge interne en haut du nom et prénom.*/
+#catherine p{
+    padding-top: 10px;
+}
  
 /*Ajout d'une marge externe à droite des photos de profil de la section témoignages.*/
 #notice img {
+    margin-top: -60px;
     margin-right: 8px;
+    margin-bottom: -50px;
 }
- 
+/*Ajout d'une marge externe sur le troisième paragraphe de la section témoignages clients.*/
+#notice p:nth-child(3){
+    margin-top: -25px;
+    margin-bottom: 10px;
+}
+/*Ajout d'une marge externe sur les images notes de la section témoignages clients.*/
+#notice img[alt="note"]{
+    margin-bottom: 40px;
+}
+#notice p:nth-child(4){
+    margin-bottom: 15px;
+}
+#notice p:last-child{
+    margin-bottom: 15px;
+}
 /*Placement de la photo de profil et du nom,prénom du bloc jeanne à coté.*/
 #jeanne {
     display: flex;
+}
+/*Ajout d'une marge interne en haut du nom et prénom.*/
+#jeanne p{
+    padding-top: 10px;
 }
  
 /*Placement de la photo de profil et du nom,prénom du bloc thibault à coté.*/
 #thibault {
     display: flex;
+}
+/*Ajout d'une marge interne en haut du nom et prénom.*/
+#thibault p{
+    padding-top: 10px;
 }
  
 /*Placement du dernier paragraphe des blocs de la section témoignages en bas à droite avec une marge interne de 5px.*/
