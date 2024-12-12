@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* pour enlever le soulignement des liens */
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2f2f2f;
+}
+
+/*debut partie de jules */
+
+/* fin partie de jules */
+/*debut partie de baptiste */
+/*fin partie de baptiste */
+/* debut partie de candice */
+/*fin partie de candice */
+/* debut de partie de maud */
+
+/* fin de partie de maud */
+@media screen and (min-width: 1024px){
+    
+    /*debut partie de jules */
+
+    /* fin partie de jules */
+    /*debut partie de baptiste */
+    /*fin partie de baptiste */
+    /* debut partie de candice */
+    /*fin partie de candice */
+    /* debut de partie de maud */
+
+    /* fin de partie de maud */
+
+
+
+
+
+
+
+
+}
