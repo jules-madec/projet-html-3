@@ -27,13 +27,14 @@ footer {
     margin-left: 6%;
 }
 
-/* pour changer le titre  */
+/* pour le titre dans le footer association de la couleur centrage et taille */
 footer h2 {
     display: flex;
     justify-content: center;
     color: #2f2f2f;
     padding: 20px;
     font-size: 2rem;
+    font-family: "Poppins", sans-serif;
 }
 
 /* pour définir la taille des pictos de contact*/
