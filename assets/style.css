@@ -20,6 +20,7 @@ a {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    box-shadow: 4px 3px 2px #2F2F2F;
 }
 
 #toggler {
@@ -49,7 +50,7 @@ a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: black;
+    color: #2F2F2F;
     display: block;
     transition: 0.3s;
 }
@@ -287,7 +288,7 @@ h1 {
 }
 
 /*Définition du style de deuxième niveau.*/
-h2 {
+main h2 {
     background-color: #e7c79b;
     color: #0c5655;
     font-size: 20px;
@@ -466,9 +467,83 @@ h2 {
 
 /*fin partie de candice */
 /* debut de partie de maud */
+
+
+
+
+/* pour définir la couleur du footer */
+footer {
+    background-color: #709791;
+}
+
+#joindre {
+    margin-left: 6%;
+}
+
+/* pour le titre dans le footer association de la couleur centrage et taille */
+footer h2 {
+    display: flex;
+    justify-content: center;
+    color: #2f2f2f;
+    padding: 20px;
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* pour définir la taille des pictos de contact*/
+#joindre img {
+    margin-right: 3%;
+    height: 3vh;
+    width: 4vh;
+}
+
+/* pour aligner les éléments texte et picto et les placer */
+
+#bloc1,
+#bloc2 {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+#bloc1 div,
+#bloc2 div {
+    display: flex;
+    width: 600px;
+    margin-bottom: 5%;
+}
+
+/* pour placer les réseaux sociaux */
+#socialpicto {
+    margin-left: 25%;
+    font-size: 1.5rem;
+    margin-top: 2%;
+}
+
+/* pour définir la taille des picto réseaux sociaux */
+#socialpicto img {
+    height: 5vh;
+    width: 5vh;
+    padding-left: 1%;
+    margin-bottom: 10%;
+    margin-top: 8%;
+}
+
+/* pour le paragraphe "suivez-nous" */
+#socialpicto p {
+    margin-left: 10%;
+}
+
+/* pour les mentions légales */
+#legal {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+
 /* fin de partie de maud */
 @media screen and (min-width: 1024px) {
-
 
     /*debut partie de jules */
     #ve {
@@ -508,6 +583,11 @@ h2 {
     #c {
         height: 70px;
         width: 214px;
+    }
+
+    .sidenav a:hover {
+        color: #F7F4E9;
+
     }
 
 
@@ -658,5 +738,39 @@ h2 {
 
     /*fin partie de candice */
     /* debut de partie de maud */
+    /* pour placer les picto et texte de contact */
+    #bloc1,
+    #bloc2 {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        max-width: 600px;
+    }
+
+    #contact {
+        display: flex;
+        align-items: center;
+
+    }
+
+    /* pour les picto réseaux sociaux */
+    #socialpicto {
+        margin-left: 20%;
+    }
+
+    #socialpicto div {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15%;
+    }
+
+    /* poiur centrer les paragraphes avec les pictos */
+    #bloc1 p,
+    #bloc2 p,
+    #bloc1 a,
+    #bloc2 a {
+        margin-top: 2%;
+    }
+
     /* fin de partie de maud */
 }
