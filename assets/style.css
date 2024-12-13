@@ -88,6 +88,10 @@ a {
     background-color: black;
     margin: 6px 0;
 }
+#la{
+    width: 100%;
+    height: auto;
+}
 
 
 /* fin partie de jules */
@@ -509,7 +513,7 @@ footer h2 {
 #bloc1 div,
 #bloc2 div {
     display: flex;
-    width: 600px;
+    width: 300px;
     margin-bottom: 5%;
 }
 
